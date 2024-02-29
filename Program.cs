@@ -5,15 +5,25 @@ using Newtonsoft.Json;
 
 using RestSharp.Authenticators;
 using System.Text.Json.Nodes;
+using Microsoft.VisualBasic;
 
 public class Program{
 
     static void Main(string[]args){
 
         var client = new RestClient("https://pokeapi.co/api/v2/");
-        var resquest = new RestRequest( "pokemon-species/" ,Method.Get);
+        var resquest = new RestRequest( "pokemon/ditto/" ,Method.Get);
         RestResponse response = client.Execute(resquest);
 
-        Console.WriteLine(response.Content);
+        Mascote mascote = JsonConvert.DeserializeObject<Mascote>(response.Content);
+        Console.WriteLine($"Nome do Mascote: {mascote.Name}");
+        Console.WriteLine($"Ordem: {mascote.Order}");
+        Console.WriteLine($"Altura: {mascote.Height}");
+        Console.WriteLine($"Peso: {mascote.Weight}");
+        Console.WriteLine($"Habilidades:");
+        foreach (var ability in mascote.Abilities)
+        {
+            Console.WriteLine($"- {ability.Ability.Name} (Slot: {ability.Slot}, IsHidden: {ability.IsHidden})");    
+        }    
     }
 }

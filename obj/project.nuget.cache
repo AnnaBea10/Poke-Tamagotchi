@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "a8AVLbJc/cl2lPX0iKTEDppcSkk9bQuM+KmPdkPGItEMVjaYOXtUeG67Ko5ckxszOHKJH1KaRJsw3K7lR50pVQ==",
+  "dgSpecHash": "K7/wHzvMQavzdSJh/UzAL8RytZea6X/0H0ql9Y+xHrks70hOAiLN7jK/dTHimtcUZaaov1Y7jlyEQo15AeePZQ==",
   "success": true,
   "projectFilePath": "/home/anna/Documentos/PokemonAPI/PokemonAPI.csproj",
   "expectedPackageFiles": [
@@ -13,8 +13,8 @@
     "/home/anna/.nuget/packages/swashbuckle.aspnetcore.swagger/6.4.0/swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
     "/home/anna/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.4.0/swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
     "/home/anna/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.4.0/swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",
-    "/home/anna/.nuget/packages/system.text.encodings.web/7.0.0/system.text.encodings.web.7.0.0.nupkg.sha512",
-    "/home/anna/.nuget/packages/system.text.json/7.0.2/system.text.json.7.0.2.nupkg.sha512"
+    "/home/anna/.nuget/packages/system.text.encodings.web/8.0.0/system.text.encodings.web.8.0.0.nupkg.sha512",
+    "/home/anna/.nuget/packages/system.text.json/8.0.2/system.text.json.8.0.2.nupkg.sha512"
   ],
   "logs": []
 }

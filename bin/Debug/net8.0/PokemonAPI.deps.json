@@ -11,7 +11,8 @@
           "Microsoft.AspNetCore.OpenApi": "8.0.2",
           "Newtonsoft.Json": "13.0.3",
           "RestSharp": "110.2.0",
-          "Swashbuckle.AspNetCore": "6.4.0"
+          "Swashbuckle.AspNetCore": "6.4.0",
+          "System.Text.Json": "8.0.2"
         },
         "runtime": {
           "PokemonAPI.dll": {}
@@ -47,7 +48,7 @@
       },
       "RestSharp/110.2.0": {
         "dependencies": {
-          "System.Text.Json": "7.0.2"
+          "System.Text.Json": "8.0.2"
         },
         "runtime": {
           "lib/net7.0/RestSharp.dll": {
@@ -94,10 +95,10 @@
           }
         }
       },
-      "System.Text.Encodings.Web/7.0.0": {},
-      "System.Text.Json/7.0.2": {
+      "System.Text.Encodings.Web/8.0.0": {},
+      "System.Text.Json/8.0.2": {
         "dependencies": {
-          "System.Text.Encodings.Web": "7.0.0"
+          "System.Text.Encodings.Web": "8.0.0"
         }
       }
     }
@@ -171,19 +172,19 @@
       "path": "swashbuckle.aspnetcore.swaggerui/6.4.0",
       "hashPath": "swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
     },
-    "System.Text.Encodings.Web/7.0.0": {
+    "System.Text.Encodings.Web/8.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-OP6umVGxc0Z0MvZQBVigj4/U31Pw72ITihDWP9WiWDm+q5aoe0GaJivsfYGq53o6dxH7DcXWiCTl7+0o2CGdmg==",
-      "path": "system.text.encodings.web/7.0.0",
-      "hashPath": "system.text.encodings.web.7.0.0.nupkg.sha512"
+      "sha512": "sha512-yev/k9GHAEGx2Rg3/tU6MQh4HGBXJs70y7j1LaM1i/ER9po+6nnQ6RRqTJn1E7Xu0fbIFK80Nh5EoODxrbxwBQ==",
+      "path": "system.text.encodings.web/8.0.0",
+      "hashPath": "system.text.encodings.web.8.0.0.nupkg.sha512"
     },
-    "System.Text.Json/7.0.2": {
+    "System.Text.Json/8.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-/LZf/JrGyilojqwpaywb+sSz8Tew7ij4K/Sk+UW8AKfAK7KRhR6mKpKtTm06cYA7bCpGTWfYksIW+mVsdxPegQ==",
-      "path": "system.text.json/7.0.2",
-      "hashPath": "system.text.json.7.0.2.nupkg.sha512"
+      "sha512": "sha512-29KA2StjWDYp32FvREifawRtNpTziLE1xyuDV9pVQ+MsaE9bIcIieP0io/eZZeLMxR+Nx9zI55RtUtpVpEIdeg==",
+      "path": "system.text.json/8.0.2",
+      "hashPath": "system.text.json.8.0.2.nupkg.sha512"
     }
   }
 }
