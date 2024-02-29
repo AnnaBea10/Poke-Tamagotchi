@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "vnpmI0349Vlwiu8412iykksScJJC4DyZmnT/zvFuMqsKLha9It/u6B5TNCSxZQ1OM+psRWKaUeUqBMbjeKUZOQ==",
+  "dgSpecHash": "a8AVLbJc/cl2lPX0iKTEDppcSkk9bQuM+KmPdkPGItEMVjaYOXtUeG67Ko5ckxszOHKJH1KaRJsw3K7lR50pVQ==",
   "success": true,
   "projectFilePath": "/home/anna/Documentos/PokemonAPI/PokemonAPI.csproj",
   "expectedPackageFiles": [
     "/home/anna/.nuget/packages/microsoft.aspnetcore.openapi/8.0.2/microsoft.aspnetcore.openapi.8.0.2.nupkg.sha512",
     "/home/anna/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "/home/anna/.nuget/packages/microsoft.openapi/1.4.3/microsoft.openapi.1.4.3.nupkg.sha512",
+    "/home/anna/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
     "/home/anna/.nuget/packages/restsharp/110.2.0/restsharp.110.2.0.nupkg.sha512",
     "/home/anna/.nuget/packages/swashbuckle.aspnetcore/6.4.0/swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "/home/anna/.nuget/packages/swashbuckle.aspnetcore.swagger/6.4.0/swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
