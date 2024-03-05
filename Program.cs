@@ -11,10 +11,11 @@ public class Program{
 
     static void Main(string[]args){
 
-        var client = new RestClient("https://pokeapi.co/api/v2/");
-        var resquest = new RestRequest( "pokemon/ditto/" ,Method.Get);
-        RestResponse response = client.Execute(resquest);
+        Menu menu = new Menu();
 
+        menu.MostrarMenuAdoção()
+
+        /*
         Mascote mascote = JsonConvert.DeserializeObject<Mascote>(response.Content);
         Console.WriteLine($"Nome do Mascote: {mascote.Name}");
         Console.WriteLine($"Ordem: {mascote.Order}");
@@ -24,6 +25,6 @@ public class Program{
         foreach (var ability in mascote.Abilities)
         {
             Console.WriteLine($"- {ability.Ability.Name} (Slot: {ability.Slot}, IsHidden: {ability.IsHidden})");    
-        }    
+        }*/    
     }
 }
