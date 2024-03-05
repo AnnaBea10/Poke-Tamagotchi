@@ -23,12 +23,12 @@ public class Menu{
     }
 
     public int ObterEscolhaJogador(){
-        int escolha;
-        while (!int.TryParse(Console.ReadLine(), out escolha) || escolha < 1 || escolha > 4)
+        int opcaoJogador;
+        while (!int.TryParse(Console.ReadLine(), out opcaoJogador) || opcaoJogador < 1 || opcaoJogador > 4)
         {
             Console.WriteLine("Escolha inválida. Por favor, escolha uma opção entre 1 e 3: ");
         }
-        return escolha;
+        return opcaoJogador;
     }
 
     //Opções do Menu
@@ -83,12 +83,11 @@ public class Menu{
         int escolha;
         while(true){
             Console.WriteLine("Escolha uma espécie pelo número ( 1- " + especies.Count + "):");
-            if(!int.TryParse(Console.ReadLine(), out escolha) && escolha >= 1 && escolha <= especies.Count){
+            if(int.TryParse(Console.ReadLine(), out escolha) && escolha >= 1 && escolha <= especies.Count){
                 break;
             }
             Console.WriteLine("Escolha inválida");
         }
-        return escolha -1;
-        
+        return escolha -1;   
     }
 }
