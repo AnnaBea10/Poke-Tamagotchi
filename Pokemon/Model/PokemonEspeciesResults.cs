@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Pokemon{
 
-    public class PokemonSpecies{
+    public class PokemonSpeciesResults{
         int Count {get; set;}
         string Next {get; set;}
         string Previous {get; set;}
 
-        public List<PokemonSpecies> especies {get; set;}
+        public List<PokemonResults> Results {get; set;}
     }
     
 }

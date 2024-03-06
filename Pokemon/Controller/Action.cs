@@ -18,7 +18,7 @@ namespace Pokemon{
         private List<PokemonResults> especiesDisponiveis {get; set;}
 
         private List<PokemonDetailsResults> mascotesAdotados {get; set;}
-        
+
         public Action(){
         menu = new Menu();
         service = new ApiService();
@@ -27,7 +27,7 @@ namespace Pokemon{
         }
 
 
-        public Jogar(){
+        public void Jogar(){
             menu.MostrarMensagemDeBoasVindas();
     
         while(true)
@@ -50,16 +50,15 @@ namespace Pokemon{
 
                         case 2:
                         menu.MostrarEspeciesDisponiveis(especiesDisponiveis);
-                        int adocao = menu.ObterMascoteEscolhido(especiesDisponiveis);
-                        PokemonDetailsResults detalhes = service.ObterDetalhesEspecies(especiesDisponiveis[adocao]);
+                        int indiceEspecies = menu.ObterMascoteEscolhido(especiesDisponiveis);
+                        PokemonDetailsResults detalhes = service.ObterDetalhesEspecies(especiesDisponiveis[indiceEspecies]);
                         menu.MostrarOpcoesDetalhes(detalhes);
                         break;
 
                         case 3:
                         menu.MostrarEspeciesDisponiveis(especiesDisponiveis);
-                        adocao = menu.ObterMascoteEscolhido(especiesDisponiveis);
-                        detalhes = service.ObterDetalhesEspecies(especiesDisponiveis[adocao]);
-                        menu.MostrarOpcoesDetalhes(detalhes);
+                        indiceEspecies = menu.ObterMascoteEscolhido(especiesDisponiveis);
+                        detalhes = service.ObterDetalhesEspecies(especiesDisponiveis[indiceEspecies]);menu.MostrarOpcoesDetalhes(detalhes);
                         if(menu.AdotarMascote()){
                             mascotesAdotados.Add(detalhes);
                             Console.WriteLine("Parabéns! Você adotou um " + detalhes.Name + "!");

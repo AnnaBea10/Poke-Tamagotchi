@@ -54,14 +54,14 @@ public class Menu{
     }
 
     //Opções do menu adoção
-    public void MostrarEspeciesDisponiveis(List<Pokemon.PokemonResults> especies){
+    public void MostrarEspeciesDisponiveis(List<PokemonResults> especies){
         Console.WriteLine("\n ----- ESPÉCIES DISPONÍVEIS -----");
         for (int i = 0; i < especies.Count; i++ ){
-            Console.WriteLine((i + 1) + "." + especies[i].results);
+            Console.WriteLine(i + 1 + "." + especies[i]);
         }
     }
 
-    public void MostrarOpcoesDetalhes(Pokemon.PokemonDetailsResults detalhes){
+    public void MostrarOpcoesDetalhes(PokemonDetailsResults detalhes){
         Console.WriteLine("\n ----- DETALHES DA ESPÉCIE -----");
         Console.WriteLine("Nome: " + detalhes.Name);
         Console.WriteLine("Ordem: " + detalhes.Order);
@@ -79,10 +79,10 @@ public class Menu{
         return resposta.ToLower() == "s";
     }
 
-    public int ObterMascoteEscolhido(List<PokemonSpecies> especies ){
+    public int ObterMascoteEscolhido(List<PokemonResults> especies){
         int escolha;
         while(true){
-            Console.WriteLine("Escolha uma espécie pelo número ( 1- " + especies.Count + "):");
+            Console.WriteLine("Escolha uma espécie pelo número ( 1- " + especies.Count + " :");
             if(int.TryParse(Console.ReadLine(), out escolha) && escolha >= 1 && escolha <= especies.Count){
                 break;
             }

@@ -17,9 +17,9 @@ namespace Pokemon{
             var resquest = new RestRequest("pokemon-species/" , Method.Get);
             RestResponse response = client.Execute(resquest);
 
-            var pokemonEspeciesResposta = JsonConvert.DeserializeObject<PokemonResults>(response.Content);
+            var pokemonEspeciesResposta = JsonConvert.DeserializeObject<PokemonSpeciesResults>(response.Content);
 
-            return pokemonEspeciesResposta.results;
+            return pokemonEspeciesResposta.Results;
         } 
 
         public PokemonDetailsResults ObterDetalhesEspecies(PokemonResults especies){

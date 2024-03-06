@@ -10,7 +10,5 @@ namespace Pokemon{
 
         string Name {get; set;}
         string Url {get; set;}
-
-        public List<PokemonResults> results {get; set;}
     }
 }
