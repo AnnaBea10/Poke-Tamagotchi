@@ -90,4 +90,13 @@ public class Menu{
         }
         return escolha -1;   
     }
+
+    //Opções do menu adoção
+    public void MostrarMenuCuidado(PokemonDetailsResults detalhes){
+        Console.WriteLine("\n ------- MENU CUIDADOS ------");
+        Console.WriteLine($"1. Saber como {detalhes.Name} está");
+        Console.WriteLine($"2. Alimentar com {detalhes.Name}");
+        Console.WriteLine($"3. Brincar com {detalhes.Name}");
+        Console.WriteLine("3. Voltar o jogo");
+    }
 }
