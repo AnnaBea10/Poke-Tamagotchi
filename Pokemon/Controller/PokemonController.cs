@@ -2,16 +2,16 @@ using System;
 using System.Text.Json.Serialization;
 using RestSharp;
 using Newtonsoft.Json;
-
+using Pokemon.View;
 using RestSharp.Authenticators;
 using System.Text.Json.Nodes;
 using Microsoft.VisualBasic;
 using System.Collections;
 
 
-namespace Pokemon{
+namespace Pokemon.Controller{
 
-    public class Action{
+    public class PokemonController{
 
         private Menu menu {get; set;}
         private ApiService service {get; set;}
@@ -19,7 +19,7 @@ namespace Pokemon{
 
         private List<PokemonDetailsResults> mascotesAdotados {get; set;}
 
-        public Action(){
+        public PokemonController(){
         menu = new Menu();
         service = new ApiService();
         especiesDisponiveis = service.ObterEspeciesPokemon();

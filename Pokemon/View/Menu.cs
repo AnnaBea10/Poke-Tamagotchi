@@ -4,6 +4,7 @@ using Newtonsoft.Json;
 using Pokemon;
 using RestSharp;
 
+namespace Pokemon.View{
 
 public class Menu{
 
@@ -99,4 +100,5 @@ public class Menu{
         Console.WriteLine($"3. Brincar com {detalhes.Name}");
         Console.WriteLine("3. Voltar o jogo");
     }
+}
 }
