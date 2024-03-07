@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace Pokemon{
+namespace Pokemon.Model{
 
     public class PokemonDto{
 
@@ -16,23 +16,15 @@ namespace Pokemon{
         public int Altura {get; set;}
         public int Peso {get; set;}
         public string Nome {get; set;}
+        public List<Habilidade> Habilidades {get; set;}
 
-        public List<Abilities> Abilities {get; set;}
-    }
-
-    public PokemonDto(){
+    public PokemonDto()
+    {
         var rand = new Random();
         Alimentacao = rand.Next(11);
         Saude = rand.Next(11);
         Energia = rand.Next(11);
         Humor = rand.Next(11);
-    }
-
-    public void AtualizarPropriedades(PokemonDetailsResults pokemonDetails){
-        Nome = pokemonDetails.Name;
-        Peso = pokemonDetails.Peso;
-        Altura = pokemonDetails.Altura;
-        Habilidades = pokemonDetails.Abilities.Select(a =>  new Habilidade {Nome = a.Ability.Name}).ToList();
     }
 
     public void Alimentar(){
@@ -70,5 +62,11 @@ namespace Pokemon{
         Console.WriteLine($"Humor {Humor}");
         Console.WriteLine($"Energia {Energia}");
         Console.WriteLine($"Saude {Saude}");
+    }
+  }
+
+    public class Habilidade
+    {
+        public string Nome {get; set;}
     }
 }
